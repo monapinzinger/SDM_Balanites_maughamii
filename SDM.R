@@ -109,7 +109,7 @@ summary(gbif_baMau)
 plot(Africa_map,
      axes = TRUE, 
      col = "grey95",
-     main = "Occurences in Africa")
+     main = "Occurences in Eastern and Southern Africa (GBIF)")
 points(x = gbif_baMau$decimalLongitude, 
        y = gbif_baMau$decimalLatitude, 
        col = "orange", 
@@ -431,3 +431,5 @@ ggplot() +
 
   # save in figures 
 ggsave(filename = here("figures", "SDM_future.png"), plot = plotSDM_future) 
+
+

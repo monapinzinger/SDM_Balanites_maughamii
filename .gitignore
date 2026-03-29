@@ -6,3 +6,5 @@ data_SDM/
 *.tif.icloud
 *.grd
 *.nc
+*.rds
+data_output/

@@ -1,0 +1,7 @@
+.DS_Store
+.Rhistory
+data_SDM/
+*.tif
+*.tif.icloud
+*.grd
+*.nc.Rproj.user

@@ -24,7 +24,7 @@ Ba_mau_ext <- c(17,52,-35,15)     #extent for the coastal area of Eastern and So
 
 # create and check main map 
 Africa_map <- crop(x=world(resolution = 2, level = 0), y = Ba_mau_ext) 
-plot(Africa_map, main = "Study Area: Eastern and Southern Africa")
+plot(Africa_map, main = "Study Area: south-east Africa")
 
 
 # 1. Environmental variables that influence the distribution of Balanites maughamii 
@@ -37,7 +37,7 @@ elev_crop <- crop(elev, Ba_mau_ext)
 
   # check with classic colours 
 plot(elev_crop, col = terrain.colors(100),
-     main = "Elevation in Eastern and Southern Africa")
+     main = "Study Area: south-east Africa with Elevation")
 
 plot(Africa_map, add = TRUE, border = "black", lwd = 0.8)
 
@@ -109,7 +109,7 @@ summary(gbif_baMau)
 plot(Africa_map,
      axes = TRUE, 
      col = "grey95",
-     main = "Occurences in Eastern and Southern Africa (GBIF)")
+     main = "Occurences in south-east Africa (GBIF)")
 points(x = gbif_baMau$decimalLongitude, 
        y = gbif_baMau$decimalLatitude, 
        col = "orange", 
